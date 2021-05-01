@@ -1,1 +1,34 @@
+#Query 1
+select avg (overall_rating) 
+from ratings, orders
+where ratings.order_id = orders.order_id 
+AND orders.restaurant_id = 1;
 
+#Restuarant_id table
+SELECT * FROM campus_eats_fall2020.restaurant_id;
+
+#Query 2
+select avg (food), avg (price)
+from restaurant_id, orders, ratings 
+where orders.order_id = ratings.order_id 
+and restaurant_id.ratings_id = ratings.ratings_id
+and orders.restaurant_id = 1
+
+#Query 3
+select avg (ontime), avg (courteous)
+from driver_rating, orders, ratings
+where orders.order_id = ratings.order_id
+and ratings.ratings_id = driver_rating.ratings_id
+and orders.restaurant_id = 1
+
+#Query 4
+select * 
+from orders
+where person_id = 1
+
+#Query 5
+select avg (ontime), avg (courteous)
+from ratings, orders, driver_rating
+where orders.order_id = ratings.order_id
+and ratings.ratings_id = driver_rating.ratings_id
+and orders.driver_id = 3
