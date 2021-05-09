@@ -9,3 +9,4 @@ Stored Procedure<br/>
 Web/App Implementation (Optional) or Description of Future Work<br/>
 MySQL dump<br/>
 PPT Video (link)<br/>
+![Screenshot (73)](https://user-images.githubusercontent.com/61239257/117584773-c5a2b300-b0dc-11eb-853a-b09c57d76785.png)
