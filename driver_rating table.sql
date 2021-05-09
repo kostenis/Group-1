@@ -1,0 +1,1 @@
+SELECT * FROM campus_eats_fall2020.driver_rating;
